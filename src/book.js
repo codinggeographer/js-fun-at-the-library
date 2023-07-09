@@ -21,14 +21,13 @@ function calculatePageCount(bookTitle) {
 }
 
 function writeBook(title, mainCharacter, genre) {
-  var book = {
+  return {
     title: title,
     mainCharacter: mainCharacter,
     pageCount: calculatePageCount(title),
     genre: genre
   }
-  return book;
-}
+};
 
 function editBook(book) {
   book.pageCount = book.pageCount * 0.75;
